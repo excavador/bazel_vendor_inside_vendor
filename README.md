@@ -1,8 +1,10 @@
 repo for reproduce bazel rules_go bug
 =====================================
 
-Consider "vendor/" directory with https://github.com/stretchr/testify project
-It has own "vendor/" directory
+Consider "vendor/" directory with https://github.com/stretchr/testify project.
+
+It has own "vendor/" directory.
+
 ```
 vendor/github.com/stretchr/testify/vendor
 ```
@@ -24,3 +26,5 @@ INFO: Elapsed time: 0.107s
 ```
 
 As you can see, gazelle ignores "vendor" inside "vendor/github.com/stretchr/testify"
+
+Dependency "github.com/stretchr/objx" stored there.
